@@ -74,6 +74,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 25px;
+    margin-top: 40px;
 }
 
 /* lower container */
