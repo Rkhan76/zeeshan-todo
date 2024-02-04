@@ -35,9 +35,12 @@ function displayTasks() {
         taskDiv.classList.add('task');
         taskDiv.innerHTML = `
             <span>${task.name} - ${task.dueDate} - ${task.priority}</span>
-            <button onclick="editTask(${index})">Edit</button>
+            <div id="button-container">
+             <button onclick="editTask(${index})">Edit</button>
             <button onclick="deleteTask(${index})">Delete</button>
-        `;
+            </div>
+           
+        `
         taskListDiv.appendChild(taskDiv);
     });
 }
