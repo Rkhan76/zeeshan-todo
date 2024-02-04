@@ -10,26 +10,29 @@
 
 <body>
     <div class="container">
-        <div>
+        <div class="addTask-container">
             <div class="image-logo">
                 <img src="./images/Logo.png" alt="">
             </div>
             <form id="taskForm">
-                <div>
-                    <label for="taskName">Task Name:</label>
+                <div class="addtask">
                     <input type="text" id="taskName" required>
-                    <button type="button" onclick="addTask()">Add Task</button>
+                    <button class="button-1" type="button" onclick="addTask()">Add Task</button>
                 </div>
                 <div class="lower-container">
-                    <label for="dueDate">Due Date:</label>
-                    <input type="date" id="dueDate">
+                    <div class="dueDate-container">
+                        <label for="dueDate">Due Date:</label>
+                         <input type="date" id="dueDate">
+                    </div>
 
-                    <label for="priority">Priority:</label>
+                    <div class="priority-container">
+                        <label for="priority">Priority:</label>
                     <select id="priority">
                         <option value="high">High</option>
                         <option value="medium">Medium</option>
                         <option value="low">Low</option>
                     </select>
+                    </div>
 
 
                 </div>
